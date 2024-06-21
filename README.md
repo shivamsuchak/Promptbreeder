@@ -1,5 +1,3 @@
-# Promptbreeder
-
 # Prompt Breeder
 
 ## Overview
@@ -8,7 +6,7 @@ Prompt Breeder is a Python project designed to generate and evolve prompts for l
 
 ## Files
 
-1. `run_prompt.py`: The main script that orchestrates the prompt generation and evolution process.
+1. `run_prompt_breeder.py`: The main script that orchestrates the prompt generation and evolution process.
 2. `mutations.py`: Contains the mutation functions used to evolve the prompts.
 3. `utils.py`: Utility functions used for reading datasets and processing model responses.
 
@@ -19,30 +17,12 @@ Prompt Breeder is a Python project designed to generate and evolve prompts for l
 - Rich (for enhanced logging and console output)
 - Other standard Python libraries (argparse, typing, os, random, logging)
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/prompt-breeder.git
-    cd prompt-breeder
-    ```
-
-2. Create a virtual environment and activate it:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
 
 ## Usage
 
 1. Prepare the `gsm8k_sampled.jsonl` dataset and place it in the project directory.
 
-2. Run the `run_prompt.py` script with the desired parameters:
+2. Run the `run_prompt_breeder.py` script with the desired parameters:
     ```bash
     python run_prompt.py -ts 2 -mp 2 -p "Solve the math word problem, giving your answer as an arabic numeral." -e 10 -n 5
     ```
@@ -83,15 +63,3 @@ Contains utility functions for reading datasets and processing model responses.
 - **read_jsonl**: Reads a JSONL file and returns a list of dictionaries.
 - **gsm_extract_answer**: Extracts the answer from the completion text.
 - **check_answer_in_response**: Checks if the expected answer is present in the model's response.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-This project utilizes OpenAI's GPT-3.5-turbo model. Special thanks to the developers of the Rich library for providing enhanced logging and console output.
-
-## Contact
-
-For any inquiries, please contact [yourname@example.com](mailto:yourname@example.com).
