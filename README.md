@@ -4,6 +4,9 @@
 
 Prompt Breeder is a Python-based project designed to iteratively improve prompt generation for language models, inspired by the genetic algorithm approach used in DeepMind's Prompt Breeder. By simulating evolutionary processes, this project aims to refine and optimize prompts to enhance the performance of models like OpenAI's GPT-3.5-turbo in solving specific tasks. This involves generating an initial population of prompts, evaluating their effectiveness, and evolving them through mutations across multiple generations.
 
+Haveliy influence by the Promptbreeder: Self-Referential Self-Improvement Via Prompt Evolution
+
+https://arxiv.org/abs/2309.16797
 
 ## Files
 
